@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Build a Professional Brand for Your Small Business | Bish Creatives</title>
+  <meta name="description" content="A webinar from Bish Creatives on building a professional brand for your small business. Register to join.">
+  <meta name="theme-color" content="#1E47D6">
+
+  <!-- Fonts: Bricolage Grotesque (headings) and Figtree (text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#register">Skip to registration form</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="wordmark" href="#top">Bish Creatives</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO: title on the left, registration form on the right -->
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <h1 id="page-title">How to Build a Professional Brand for Your Small Business</h1>
+          <p class="hero-lead">
+            Learn how to look established, stay consistent, and earn customer trust,
+            whether you are just starting out or ready to grow.
+          </p>
+
+          <!-- ADD YOUR DATE AND TIME: copy one of the <div> rows below,
+               change "Format" to "Date" or "Time", and change the text. -->
+          <dl class="event-details">
+            <div>
+              <dt>Format</dt>
+              <dd>Online webinar</dd>
+            </div>
+            <div>
+              <dt>Host</dt>
+              <dd>Bish Creatives</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="signup" id="register">
+
+          <div id="signup-content">
+            <h2>Register for the webinar</h2>
+            <p class="signup-intro">Enter your name and email to join.</p>
+
+            <!--
+              MAILERLITE: the action URL below comes from your MailerLite embed code
+              (account 2822664, form 205078745753585265). script.js reads it from here,
+              so this is the only place it needs to live.
+              The field names (fields[name], fields[email]), "ml-submit" and "anticsrf"
+              must stay exactly as they are.
+            -->
+            <form id="signup-form"
+                  action="https://assets.mailerlite.com/jsonp/2822664/forms/205078745753585265/subscribe"
+                  method="post"
+                  novalidate>
+
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="fields[name]" autocomplete="name"
+                       required aria-describedby="name-error">
+                <p class="field-error" id="name-error" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="fields[email]" autocomplete="email"
+                       inputmode="email" required aria-describedby="email-error">
+                <p class="field-error" id="email-error" aria-live="polite"></p>
+              </div>
+
+              <!-- reCAPTCHA: same site key as your MailerLite embed code -->
+              <div class="field">
+                <div class="captcha">
+                  <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
+                </div>
+                <p class="field-error" id="captcha-error" aria-live="polite"></p>
+              </div>
+
+              <input type="hidden" name="ml-submit" value="1">
+              <input type="hidden" name="anticsrf" value="true">
+
+              <button type="submit" class="btn btn-block" id="submit-btn">Register</button>
+              <p class="form-status" id="form-status" role="alert"></p>
+            </form>
+          </div>
+
+          <!-- Shown after a successful registration -->
+          <div id="success" class="success" role="status" tabindex="-1" hidden>
+            <span class="success-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                   stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.5l4.5 4.5L19 7.5"/>
+              </svg>
+            </span>
+            <h2>You're registered</h2>
+            <p id="success-text">Thanks! We'll send the webinar details to your email.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU WILL LEARN -->
+    <section class="learn" aria-labelledby="learn-title">
+      <div class="container">
+        <h2 id="learn-title">What you will learn</h2>
+        <ul class="learn-list">
+          <li>
+            <h3>Say what your business stands for</h3>
+            <p>Turn what you do into one clear message that customers remember and repeat.</p>
+          </li>
+          <li>
+            <h3>Look the same everywhere</h3>
+            <p>Use your logo, colours, and fonts consistently so people recognise you on Instagram, online, and in print.</p>
+          </li>
+          <li>
+            <h3>Build trust with every message</h3>
+            <p>Make your profiles, captions, and customer replies feel as professional as your work.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WHO IT IS FOR -->
+    <section class="audience" aria-labelledby="audience-title">
+      <div class="container audience-grid">
+        <div>
+          <h2 id="audience-title">Who this webinar is for</h2>
+          <p>Small business owners who want customers to take them seriously from the first look.</p>
+          <a class="btn" href="#register">Go to registration</a>
+        </div>
+        <ul class="audience-list">
+          <li>Founders who are launching and want a strong brand from day one</li>
+          <li>Owners whose business has grown but whose look has not kept up</li>
+          <li>Freelancers and creatives who sell their own name</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Bish Creatives</p>
+      <a href="https://www.instagram.com/bishcreatives/" target="_blank" rel="noopener">Instagram: @bishcreatives</a>
+    </div>
+  </footer>
+
+  <!-- Google reCAPTCHA (required by your MailerLite form) -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="script.js"></script>
+</body>
+</html>
